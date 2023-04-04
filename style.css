@@ -21,16 +21,12 @@ ul{
 ._ibg img{
     z-index: 0;
     position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    object-fit: cover;
+    width: 120%;
+    height: 908px;
 }
 body{
     overflow-x: hidden;
     width: 100%;
-    height: 100%;
     line-height: 1;
     font-size: 16px;
     color: black;
@@ -49,12 +45,12 @@ body{
 /**************************************************/
 .header{
     
-    margin: 0px 40px 0px 40px;
+    margin: 30px 40px 0px 40px;
     position: absolute;
     width: 100%;
     left: 0;
     top: 0;
-    z-index: 70;
+    z-index: 1;
 }
 .header__container{
     display: flex;
@@ -192,7 +188,6 @@ body{
 
 
 .not_only{
-
     margin: 0px 0px 0px 30px;
     position: relative;
     
@@ -201,11 +196,10 @@ body{
 
 }
 .not_only__body{
-    
     margin: 0px 40px 0px 40px;
     position: relative;
     padding: 403px 0px 451px 0px;
-    z-index: 2;
+    z-index: 1;
     max-width: 460px;
 }
 .not_only__title{
@@ -244,12 +238,33 @@ body{
 .not_only__img{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 908px;
     top: 0;
     left: 0;
     object-fit: cover;
 }
-
+.not_only__img__dog{
+    height: 728px;
+    width: 698px;
+    position: relative;
+    margin-left: 470px;
+    bottom: 520px;
+}
+@media (max-width: 768px){
+    .not_only__img{
+        display: none;
+    }
+    .not_only{
+        height: 1165px;
+        background: url("https://sun9-72.userapi.com/impg/NbC7uUJbr9Mnf4nXOXdvDWS0wd7k4AAxAfY8qQ/LBVQjaD7SmM.jpg?size=1276x351&quality=96&sign=0c16fa8bfbad029711cd36db017e9056&type=album");
+    }
+    .not_only__img__dog{
+        width: 569px;
+        height: 593px;
+        top: 153px;
+        right: 566px;
+    }
+}
  /* @media (max-width: 320px){
     .header{
         margin: 0px 0px 0px 10px;
@@ -275,11 +290,15 @@ body{
 } */
 
 .about{
+    height: 588px;
+    bottom: 799px;
     margin: 0px 0px 0px 215px;
     position: relative;
 }
 
 .about__body{
+    z-index: 0;
+    height: 588px;
     bottom: 390px;
     margin-left: 635px;
     position: relative;
@@ -319,13 +338,18 @@ body{
 
 
 @media (max-width: 768px){
+    .about{
+        height: 950px;
+    }
     .about__body{
-        margin-top: -580px;
+        padding: 15px 0px;
+        margin-top: -600px;
         margin-left: 0px;
     }
     .about__img{
         position: relative;
-        margin: 500px 0px 100px 40px;
+        margin: 1330px 0px 100px 40px;
+        padding: 15px 0px;
     }
  }
  @media (max-width: 320px){
@@ -347,7 +371,7 @@ body{
     margin: 0px 40px 0px 40px;
     background: #F6F6F6;
     position: relative;
-    max-width: 1200px;
+    width: 1200px;
     height: 877px;
 }
 .our_friends__choose{
@@ -355,7 +379,8 @@ body{
     display: flex;
 }
 .our_friends__title{
-    padding: 80px 0px 60px 0px;
+    position: relative;
+    padding: 80px 90px 60px 0px;
     text-align: center;
     font-family: 'Georgia';
     font-style: normal;
@@ -416,7 +441,7 @@ body{
     color: #292929;
 }
 .our_friends__buttons{
-    margin: 75px 0px 100px 480px;
+    margin: 75px 0px 100px 439px;
     position: absolute;
     padding: 15px 45px;
     background: #F1CDB3;
@@ -483,12 +508,16 @@ body{
     border: 6px solid transparent; 
 	border-right: 14px solid #292929;
 }
+.our_friends{
+    background: #F6F6F6;
+}
 
 
 
 
 @media (max-width: 768px){
     .our_friends__title{
+        margin-right: 250px;
         text-align: center;
         font-size: 25px;
         right: 80px;
@@ -498,7 +527,7 @@ body{
         display: none;
     }
     .our_friends__buttons{
-        margin: 75px 0px 100px 210px;
+        margin: 75px 0px 100px 230px;
     }
     .our_friends{
         margin: 160px 0px;
@@ -507,6 +536,9 @@ body{
     .our_friends__choose{
         display: flex;
         justify-content: space-around;
+    }
+    .our_friends_jennifer{
+        margin-right: 450px;
     }
     
  }
@@ -543,6 +575,7 @@ body{
  }
  
 .help__body{
+    bottom: 200px;
     margin: 145px 40px 0px 40px;
     max-width: 1200px;
     position: relative;
@@ -598,7 +631,15 @@ body{
         align-items: end;
      }
  }
- 
+ .in_addition{
+    height: 462px;
+    background: #F6F6F6;
+    margin-top: -200px;
+ }
+ .in_addition__container{
+    position: relative;
+    bottom: 255px;
+ }
 .in_additoin__title{
     padding: 80px 0px 0px 0px;
     max-width: 280px;
@@ -610,6 +651,7 @@ body{
     color: #545454;
 }
 .in_addition__body{
+    
     position: relative;
     margin-left: 718px;
 }
@@ -631,6 +673,11 @@ body{
     background: #F1CDB3;
     border-radius: 9px
 }
+.in_additiob__img__dog{
+    top: 350px;
+    position: relative;
+    right: 555px;
+}
 .in_addition__card_numbs{
     text-align: center;
     font-family: 'Georgia';
@@ -640,6 +687,7 @@ body{
     line-height: 115%;
     color: #545454;
 }
+
 .in_addition__add{
     padding: 20px 0px 100px 0px;
     max-width: 400px;
@@ -650,11 +698,21 @@ body{
     line-height: 18px;
     color: #B2B2B2;
 }
+.in_additiob__img__dog_2{
+    display: none;
+}
 
 @media (max-width: 768px){
-    .in_additoin__title{
+    .in_addition{
+        height: 783px;
     }
+   .in_additiob__img__dog_2{
+        display: block;
+        margin-left: 122px;
+   }
     .in_addition__body{
+        width: 768px;
+        overflow: hidden;
         margin: 0px 274px 0px 194px;
     }
  }
@@ -673,11 +731,17 @@ body{
  
 
 /******************************************************************/
+.footer{
+    width: 100%;
+    height: 350px;
+    background: url("https://sun9-72.userapi.com/impg/NbC7uUJbr9Mnf4nXOXdvDWS0wd7k4AAxAfY8qQ/LBVQjaD7SmM.jpg?size=1276x351&quality=96&sign=0c16fa8bfbad029711cd36db017e9056&type=album");
+}
 .footer__flex{
     display: flex;
     flex-direction: column;
 }
 .footer__body{
+    padding-top: 40px;
     margin: 0px 40px 0px 40px;
     max-width: 1200px;
     position: relative;
@@ -692,7 +756,10 @@ body{
     letter-spacing: 0.06em;
     color: rgb(167, 152, 152); 
 }
-
+.footer__img__bg{
+    position: relative;
+    width: 100%;
+}
 .footer__telephone{
     padding: 0px 0px 64px 60px;
     font-family: 'Georgia';
@@ -746,13 +813,7 @@ body{
     line-height: 115%;
     color: #F1CDB3;
 }
-.footer__location__img{
-    position: absolute;
-}
-.footer__location__img_1{
-    position: absolute;
-    margin-top: 40px;
-}
+
 .footer__location__park{
     padding: 0px 0px 64px 52px;
     font-family: 'Georgia';
@@ -763,13 +824,17 @@ body{
     color: #F1CDB3;
 }
 .footer__img_dog{
-    
-    margin-left: 800px;
+    margin-left: 805px;
     position: relative;
     width: 300px;
     height: 310px;
+    bottom: 320px;
 }
 @media (max-width: 768px){
+    .footer{
+        overflow: hidden;
+        height: 639px;
+    }
    .footer__location{
     padding: 30px 0px 0px 0px;
    }
@@ -778,6 +843,28 @@ body{
    }
    .footer__body{
     height: 639px;
+   }
+   .footer__location__title{
+    font-size: 35px;
+    width: 270px;
+   }
+   .footer__img_dog{
+    margin-top: 300px;
+    margin-left: 170px;
+   }
+   .footer__location__street{
+    margin-top: -66px;
+    width: 260px;
+   }
+   .footer__location__park{
+    width: 260px;
+    margin-top: -20px;
+   }
+   .footer__location__img_1{
+    margin-top: 40px;
+   }
+   .footer__location__img{
+    margin-top: -5px;
    }
 }
 @media (max-width: 320px){
