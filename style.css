@@ -701,6 +701,9 @@ body{
     line-height: 115%;
     color: #545454;
 }
+.in_addition__add_2{
+    display: none;
+}
 
 .in_addition__add{
     padding: 20px 0px 100px 0px;
@@ -753,8 +756,8 @@ body{
         position: relative;
         z-index: 2;
     }
-    .in_addition__border{
-      
+    .in_addition{
+        height: 542px;
     }
     .in_addition__card{
         margin-top: -200px;
@@ -762,11 +765,12 @@ body{
     .in_additiob__img__dog_2{
         position: relative;
         left: -80px;
-        margin-top: 460px;
+        margin-top: 280px;
         width: 260px;
         height: 135px;
     }
     .in_addition__add_2{
+        display: block;
         position: absolute;
         padding: 0px 10px 100px 10px;
         max-width: 400px;
@@ -776,7 +780,7 @@ body{
         font-size: 12px;
         line-height: 18px;
         color: #B2B2B2;
-        bottom: 240px;
+        bottom: 80px;
     }
   
 }
