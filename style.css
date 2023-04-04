@@ -367,6 +367,9 @@ body{
         right: 245px;
     }
  }
+ .our_friends{
+    margin-top: -750px;
+ }
 .our_friends__body{
     margin: 0px 40px 0px 40px;
     background: #F6F6F6;
@@ -804,6 +807,7 @@ body{
     color: rgb(167, 152, 152); 
 }
 .footer__location__street{
+    margin-top: -66px;
     max-width: 260px;
     padding: 34px 0px 37px 52px;
     font-family: 'Georgia';
@@ -822,6 +826,13 @@ body{
     font-size: 20px;
     line-height: 115%;
     color: #F1CDB3;
+    margin-top: -24px;
+}
+.footer__location__img_1{
+    margin-top: 40px;
+}
+.footer__location__img{
+    margin-top: -10px;
 }
 .footer__img_dog{
     margin-left: 805px;
