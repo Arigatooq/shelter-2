@@ -342,6 +342,7 @@ body{
         height: 950px;
     }
     .about__body{
+        z-index: 1;
         padding: 15px 0px;
         margin-top: -600px;
         margin-left: 0px;
@@ -353,18 +354,24 @@ body{
     }
  }
  @media (max-width: 320px){
+    .about__container{
+        width: 320px;
+    }
+   
     .about__body{
-        bottom: 700px;
+        margin-left: -210px;
+        margin-bottom: -900px;
         position: absolute;
-        width: 300px;
-        right: 10px;
+        width: 320px;
     }
     .about__title{
         text-align: center;
     }
     .about__img{
-        top: -150px;
-        right: 245px;
+        position: absolute;
+        top: -20px;
+        right: 4px;
+        padding: 50px 10px 0px 0px;
     }
  }
  .our_friends{
@@ -545,7 +552,10 @@ body{
     }
     
  }
- @media (max-width: 320px){
+ @media (max-width: 320px) {
+    .our_friends_katrine{
+        margin-right: 940px;
+    }
   
     .our_friends__title{
         position: relative;
@@ -556,11 +566,12 @@ body{
         display: none;
     }
     .our_friends__buttons{
+        margin: 75px 0px 100px 230px;
         width: 170px;
         position: absolute;
         right: 1px;
     }
-    /* .our_friends__circle_2{
+    .our_friends__circle_2{
         position: absolute;
         visibility: visible;
         left: 120px;
@@ -573,8 +584,8 @@ body{
       }
       .our_friends__all_circles{
         position: absolute;
-      } */
-   
+      } 
+    
  }
  
 .help__body{
@@ -705,7 +716,7 @@ body{
     display: none;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) and (min-width: 320px) {
     .in_addition{
         height: 783px;
     }
@@ -714,6 +725,7 @@ body{
         margin-left: 122px;
    }
     .in_addition__body{
+        height: 783px;
         width: 768px;
         overflow: hidden;
         margin: 0px 274px 0px 194px;
@@ -721,14 +733,52 @@ body{
  }
  @media (max-width: 320px){
     .in_additoin__title{
+        top: -86px;
+        position: absolute;
         text-align: center;
         width: 300px;
         font-size: 25px;
     }
     .in_addition__body{
+        top: 300px;
+        margin-top: -500px;
+        height: 342px;
+        width: 322px;
         position: relative;
         margin: 10px 10px;
     }
+    .in_addition__add{
+        height: 342px;
+        display: none;
+        position: relative;
+        z-index: 2;
+    }
+    .in_addition__border{
+      
+    }
+    .in_addition__card{
+        margin-top: -200px;
+    }
+    .in_additiob__img__dog_2{
+        position: relative;
+        left: -80px;
+        margin-top: 460px;
+        width: 260px;
+        height: 135px;
+    }
+    .in_addition__add_2{
+        position: absolute;
+        padding: 0px 10px 100px 10px;
+        max-width: 400px;
+        font-family: 'Arial';
+        font-style: italic;
+        font-weight: 380px;
+        font-size: 12px;
+        line-height: 18px;
+        color: #B2B2B2;
+        bottom: 240px;
+    }
+  
 }
   
  
